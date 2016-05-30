@@ -14,6 +14,7 @@ gem 'haml-rails'
 gem 'foundation-rails'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
   gem 'pry-byebug'
   gem 'byebug'
 end
