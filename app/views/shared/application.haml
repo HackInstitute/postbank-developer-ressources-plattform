@@ -1,0 +1,16 @@
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:charset => "utf-8"}
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title Hackthon Certificate Server
+    = stylesheet_link_tag "style"
+    = stylesheet_link_tag "//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css"
+    = javascript_include_tag "modernizr"
+  %body
+    = partial "navbar"
+    = yield
+    = partial :footer
+    = javascript_include_tag "konami/konami"
+    = javascript_include_tag  "all"

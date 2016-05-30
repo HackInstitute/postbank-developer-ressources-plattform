@@ -1,0 +1,329 @@
+$global-margin: 10px
+$global-padding: 10px
+
+body
+  font-family: Hack, monospace
+  font-size: 14px
+  color: $text-color
+  line-height: 20px
+  overflow-wrap: break-word
+  a
+    color: $postbank-color-opacity
+  a:hover
+    color: $postbank-color
+  ul
+    list-style-type: none
+    margin-left: 0px
+
+.hero-unit
+  width: 100%
+  height: 700px
+  background-color: #AAA
+  background-repeat: no-repeat
+  background-size: cover
+
+  .row
+    height: 100%
+  &.in--index
+    background-image: image-url("BG_Banner_Start.jpg")
+  &.in--idea
+    background-image: image-url("BG_Highlight_Idea.jpg")
+  &.in--event
+    background-image: image-url("BG_Highlight_Event.jpg")
+  &.in--locations
+    background-image: image-url("BG_Highlight_Locations.jpg")
+  &.in--support
+    background-image: image-url("BG_Highlight_Features.jpg")
+  &.in--mood
+    background-image: image-url("BG_Highlight_Mood.jpg")
+  &.in--facts
+    background-image: image-url("BG_Highlight_Facts.jpg")
+
+
+.headline-block
+  margin-bottom: 50px
+
+  .subline
+    &:before
+      display: none
+
+.content-unit
+  background-color: $background-color
+  padding-top: 5%
+  padding-bottom: 5%
+  font-size: 18px
+
+  &.light-background
+    background-color: $background-color-accent
+
+  p
+    margin-bottom: 1.5rem
+    line-height: 1.8
+
+  .orbit-previous,
+  .orbit-next
+    height: 80%
+    background-color: #1B1B1B
+
+.headline
+  font-size: 24px
+  color: $headline-color
+  line-height: 30px
+
+.headline-blue
+  @extend .headline
+  color: $contrast-color
+
+.headline-yellow
+  @extend .headline
+  color: $postbank-color
+
+.headline-quote
+  padding: 0 1rem
+  line-height: 1.4
+  text-align: center
+  @extend .headline
+
+.headline-list
+  color: $postbank-color
+  &.with--margin-top
+    margin-top: 60px
+
+.subline
+  margin-bottom: 2rem
+  font-size: 28px
+  color: $subline-color
+  line-height: 1.5 !important
+  &.with--margin-top
+    margin-top: 100px
+  &:before
+    content: "_"
+    color: $postbank-color
+    margin-right: .25rem
+
+.topic-subline
+  margin: 1rem 0
+  font-size: 28px
+  color: $subline-color
+  line-height: 1.5 !important
+
+.yellow-number
+  color: $postbank-color
+  font-size: 68px
+
+.blue-box
+  width: 100%
+  border: 1px solid $contrast-color
+  border-radius: 10px
+  text-align: center
+  padding: 20px
+  margin-top: 20px
+  margin-bottom: 20px
+
+.pb-color
+  color: $postbank-color
+  a
+    color: $postbank-color
+  a:hover
+    color: $postbank-color-opacity
+
+.contrast-color
+  color: $contrast-color
+
+.grey-color
+  color: $text-color-opacity
+
+.line-top
+  &.yellow
+    border-top: 1px solid $postbank-color
+
+.line-left
+  position: relative
+  padding-left: 20px
+  margin-left: -25px
+  &.yellow
+    border-left: 5px solid $postbank-color
+  &.blue
+    border-left: 5px solid $contrast-color
+  &.white
+    border-left: 5px solid white
+  &.grey
+    border-left: 5px solid $text-color-opacity
+  &.red
+    border-left: 5px solid $get-together-color
+
+.yellow-line
+  position: relative
+  border-left: 5px solid $postbank-color
+  padding-left: 20px
+  margin-left: -25px
+
+
+.yellow-frame
+  border: 3px solid $postbank-color
+
+.border-box
+  border: 3px solid $postbank-color
+  margin-bottom: 30px
+  &.as-padded
+    padding: 20px
+  &.blue
+    border: 3px solid $contrast-color
+  &.red
+    border: 3px solid $get-together-color
+
+.bullets
+  &.star
+    list-style-type: none
+    li:before
+      content: "\2605"
+      margin-right: 1.2em
+  &.circle
+    list-style-type: circle
+  &.disc
+    list-style-type: none
+    li
+      margin-bottom: .5rem
+      &:before
+        margin-right: .75rem
+        content: ">"
+        color: $postbank-color
+      ul
+        list-style-type: none
+
+  &.decimal
+    list-style-type: decimal
+  &.upper-roman
+    list-style-type: upper-roman
+
+.margin-top
+  margin-top: $global-margin
+
+.margin-right
+  margin-right: $global-margin
+
+.margin-bottom
+  margin-bottom: $global-margin
+
+.margin-left
+  margin-left: 200px
+
+.margin-vertical
+  margin-top: 80px
+  margin-bottom: 80px
+  p
+    margin-top: 80px
+    margin-bottom: 80px
+
+.padding-top
+  padding-top: $global-padding
+
+.padding-right
+  padding-right: $global-padding
+
+.padding-bottom
+  padding-bottom: $global-padding
+
+.padding-left
+  padding-left: $global-padding
+
+.margin
+  &.top
+    margin-top: $global-margin
+  &.right
+    margin-right: $global-margin
+  &.bottom
+    margin-bottom: $global-margin
+  &.left
+    margin-left: $global-margin
+
+.padding
+  &.top
+    padding-top: $global-padding
+  &.right
+    padding-right: $global-margin
+  &.bottom
+    padding-bottom: $global-margin
+  &.left
+    padding-left: $global-margin
+
+.italic
+  font-style: italic
+
+.full-size
+  width: 100%
+  height: 100%
+
+.tabs-title
+  a
+    color: $text-color
+  a:hover
+    color: $text-color-opacity
+
+.timetable
+  margin: 0 1rem
+
+@media screen and (max-width: 39.9375em)
+  .hero-unit
+    height: 100%
+  .headline-block
+    margin-bottom: 10px
+  .headline-quote
+    font-size: 20px
+  .subline
+    font-size: 18px
+    margin: 1rem 0
+  .content-unit
+    font-size: 14px
+    overflow: hidden
+    > .row.align-center
+      > .columns
+        padding: 0
+    .bullets.disc.margin.left
+      margin-left: 0
+  .orbit-slide
+    // display: block !important
+    // margin-bottom: 3rem
+
+.is-4,
+.is-8
+  position: relative
+  overflow: hidden
+
+  img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+.is-4
+  margin: 1rem 1rem 2rem
+  padding-bottom: 100%
+
+.is-8
+  margin: 1rem 1rem 2rem
+  padding-bottom: 50%
+
+table
+  &.space
+    width: 100%
+  td
+    padding-bottom: $global-padding
+    vertical-align: top
+  tr
+    &.last
+      height: 50px
+  tbody
+    tr
+      td
+        &.headline-table
+          color: $postbank-color
+          height: 100px
+          vertical-align: bottom
+
+.footer
+  background-color: $background-color
+  overflow: hidden
+  padding-top: 100px

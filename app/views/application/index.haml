@@ -1,0 +1,12 @@
+%h1 Get your post /Bank hackathon certificate here!
+%h2 This page will be available only in a few hours
+- if flash[:error]
+  %p
+    There is no certificate for your entries, please try again or contact
+    = mail_to 'somebody@mail.com', 'The mail person'
+=# form_for :certificate, url: certificate_url, method: 'GET',  html: { class: 'certificate-form' } do |f|
+  =# f.label 'Email'
+  =# f.text_field :email
+  =# f.label 'Booking ID'
+  =# f.text_field :booking_id
+  =# f.submit 'Get certificate'
