@@ -1,10 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
 
-Certivicates.create([
-])
+f = CSV.read('db/seeds.csv')
+f.each do |line|
+  Certificate.create email: line[2], booking_id: line[3], certificate_link: "app/certificates/#{line[0]}.zip"
+end
