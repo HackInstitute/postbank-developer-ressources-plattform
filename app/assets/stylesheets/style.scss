@@ -43,4 +43,44 @@
   padding: 70px;
   color: black;
   text-align: center;
+  float: right;
+  width: 50%;
+  background: #f3f5f8;
+}
+
+.main-show {
+  padding: 70px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  background: #f3f5f8;
+  height: 100%;
+}
+
+.inner-show {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 600px;
+  margin: 50px auto 20px auto;
+}
+
+.emo_image {
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-image: image-url("22558.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-blue {
+  padding: 10px;
+  border-radius: 5px;
+  background: #0a3478;
+  color: #fff;
+}
+
+h1 {
+  font-size: 25pt
 }

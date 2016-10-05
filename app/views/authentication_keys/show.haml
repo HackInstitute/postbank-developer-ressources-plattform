@@ -1,0 +1,25 @@
+.main-show
+  %h1 
+    %strong Your Authentication Key Details
+  .inner-show
+
+    %p
+      %strong
+        Your Key: 
+      = text_field_tag 'auth_key', @authentication_key.auth_key, disabled: true
+    %p
+      %strong 
+        Your Postbank Id:
+      = text_field_tag 'pbid', @authentication_key.user.postbank_ids.last.uuid, disabled: true
+    %p
+      %strong 
+        Your Password:
+      = text_field_tag 'password', @authentication_key.user.postbank_ids.last.password, disabled: true
+    %p 
+      %strong 
+        Documentation:
+      = text_field_tag 'password', "https://hackathon.postbank.de/bank-api/gold/documentation/index.html", disabled: true
+    %p 
+      %strong 
+        To start just do POST {:username, :password} and set a few HTTP-Headers... (ask Michael for more Information)
+      = text_field_tag 'password', "https://hackathon.postbank.de/bank-api/gold/postbankid/token", disabled: true      

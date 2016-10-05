@@ -1,12 +1,18 @@
+.emo_image
+
 .main
-  %h1 Get your post /Bank hackathon certificate here!
-  - if flash[:error]
-    %p
-      There is no certificate for your entries, please try again or contact
-      = mail_to 'elisa@hack.institute', 'elisa@hack.institute'
-  = form_for :certificate, url: certificate_url, method: 'GET',  html: { class: 'certificate-form' } do |f|
+  %h1
+    %strong Postbank Developer Ressources
+  = form_for @user,  html: { class: 'certificate-form' } do |f|
+    = f.label 'Name'
+    = f.text_field :name
     = f.label 'Email'
     = f.text_field :email
-    = f.label 'Booking ID'
-    = f.text_field :booking_id
-    = f.submit 'Get certificate'
+    = f.label 'Address'
+    = f.text_field :address
+    = f.label 'ZIP'
+    = f.text_field :zip
+    = f.label 'City'
+    = f.text_field :city
+
+    = f.submit 'Jetzt starten', class: 'btn-blue'
